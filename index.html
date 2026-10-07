@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceSearch Kids</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sky decorations -->
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="cloud cloud3">☁️</div>
+
+    <div class="star star1">⭐</div>
+    <div class="star star2">✨</div>
+    <div class="star star3">🌟</div>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            🎤
+            <span>VoiceSearch</span>
+            <b>Kids</b>
+        </div>
+
+        <div class="header-message">
+            👋 Hi Little Explorer!
+        </div>
+
+    </header>
+
+
+    <!-- Main Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <div class="badge">
+                    🌈 Learn • Search • Play
+                </div>
+
+                <h1>
+                    What do you want
+                    <span>to discover?</span>
+                </h1>
+
+                <p>
+                    🎤 Tap the microphone and tell me what you want!
+                </p>
+
+
+                <!-- Voice Search -->
+                <div class="voice-area">
+
+                    <button id="micButton" class="mic-button">
+                        🎤
+                    </button>
+
+                    <div id="status">
+                        Tap the microphone to talk
+                    </div>
+
+                    <div id="recognizedText">
+                        Your words will appear here...
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cartoon Area -->
+            <div class="cartoon-area">
+
+                <div class="sun">☀️</div>
+
+                <div class="rainbow">
+                    🌈
+                </div>
+
+                <div class="castle">
+                    🏰
+                </div>
+
+                <div class="animals">
+
+                    <div class="animal giraffe">
+                        🦒
+                        <span>Giraffe</span>
+                    </div>
+
+                    <div class="animal elephant">
+                        🐘
+                        <span>Elephant</span>
+                    </div>
+
+                    <div class="animal owl">
+                        🦉
+                        <span>Owl</span>
+                    </div>
+
+                    <div class="animal puppy">
+                        🐶
+                        <span>Puppy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Search -->
+        <section class="search-section">
+
+            <h2>
+                🌟 What would you like to do?
+            </h2>
+
+            <div class="cards">
+
+                <button class="search-card youtube"
+                        onclick="searchYouTube('nursery rhymes for kids')">
+
+                    <div class="card-icon">▶️</div>
+
+                    <h3>Watch Videos</h3>
+
+                    <p>Fun kids videos</p>
+
+                </button>
+
+
+                <button class="search-card web"
+                        onclick="searchWeb('animals for kids')">
+
+                    <div class="card-icon">🌍</div>
+
+                    <h3>Search Web</h3>
+
+                    <p>Discover new things</p>
+
+                </button>
+
+
+                <button class="search-card learn"
+                        onclick="searchWeb('learning for kids')">
+
+                    <div class="card-icon">📚</div>
+
+                    <h3>Learn</h3>
+
+                    <p>Learn something new</p>
+
+                </button>
+
+
+                <button class="search-card music"
+                        onclick="searchYouTube('kids nursery songs')">
+
+                    <div class="card-icon">🎵</div>
+
+                    <h3>Music</h3>
+
+                    <p>Sing and dance</p>
+
+                </button>
+
+
+                <button class="search-card animals"
+                        onclick="searchWeb('cute animals for kids')">
+
+                    <div class="card-icon">🐼</div>
+
+                    <h3>Animals</h3>
+
+                    <p>Meet cute animals</p>
+
+                </button>
+
+
+                <button class="search-card space"
+                        onclick="searchWeb('space for kids')">
+
+                    <div class="card-icon">🚀</div>
+
+                    <h3>Space</h3>
+
+                    <p>Explore the stars</p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Voice Commands -->
+        <section class="commands">
+
+            <h2>🎤 Try saying...</h2>
+
+            <div class="command-list">
+
+                <button onclick="voiceExample('Search animals')">
+                    🦁 "Search animals"
+                </button>
+
+                <button onclick="voiceExample('Play nursery rhymes')">
+                    🎵 "Play nursery rhymes"
+                </button>
+
+                <button onclick="voiceExample('Search space for kids')">
+                    🚀 "Search space for kids"
+                </button>
+
+                <button onclick="voiceExample('Search YouTube cartoons')">
+                    📺 "Search YouTube cartoons"
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div>🌈 Learn</div>
+        <div>🐶 Play</div>
+        <div>⭐ Discover</div>
+        <div>❤️ Have Fun</div>
+
+        <p>
+            Made for little explorers 🚀
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
